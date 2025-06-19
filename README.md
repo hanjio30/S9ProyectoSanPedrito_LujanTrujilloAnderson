@@ -75,6 +75,23 @@ Estructura Visual:
 - Información Académica: Facultad y escuela profesional
 - Información del Evento: Talla de polo y tipo de participación
 
+Capturas de la Aplicación
+1) Formulario de la Aplicación:
+   ![image](https://github.com/user-attachments/assets/28760d9e-770d-41cb-8525-f3d4d8fa0f95)
+![image](https://github.com/user-attachments/assets/58e9c0e4-bfc7-47e3-80ab-88ddc601765a)
+
+2) Menú de Opciones:
+![image](https://github.com/user-attachments/assets/9797c994-ae74-4bb7-b46d-52c235da9f51)
+![image](https://github.com/user-attachments/assets/0a753b63-6095-469a-b2e6-66af67b2760d)
+![image](https://github.com/user-attachments/assets/6b5a2333-a89c-4300-b186-fc42f19e18be)
+![image](https://github.com/user-attachments/assets/b9a0ebfe-d769-43b7-90e3-b6ffab13869f)
+![image](https://github.com/user-attachments/assets/efbfc2cb-3356-4cea-b2e1-3584be8090c7)
+
+3) Menú Contextual:
+![image](https://github.com/user-attachments/assets/f894d452-97f0-4215-b10b-14e7ff6edb23)
+![image](https://github.com/user-attachments/assets/4ba4ac43-b8ea-4ecb-ac10-a86c0ee6efa0)
+![image](https://github.com/user-attachments/assets/a86ec94b-0a31-4794-b725-6eea34564243)
+![image](https://github.com/user-attachments/assets/c41c3c49-7037-408d-8f13-05665fb9d773)
 
 
-*Desarrollado para la Universidad Nacional del Santa - ¡Vive la tradición universitaria!* 🏛️
+*Desarrollado para la Universidad Nacional del Santa de parte del estudiante Lujan Trujillo Anderson Junior- ¡Vive la tradición universitaria!* 🏛️
