@@ -77,7 +77,7 @@ Estructura Visual:
 
 Capturas de la Aplicación
 1) Formulario de la Aplicación:
-   ![image](https://github.com/user-attachments/assets/28760d9e-770d-41cb-8525-f3d4d8fa0f95)
+![image](https://github.com/user-attachments/assets/28760d9e-770d-41cb-8525-f3d4d8fa0f95)
 ![image](https://github.com/user-attachments/assets/58e9c0e4-bfc7-47e3-80ab-88ddc601765a)
 
 2) Menú de Opciones:
