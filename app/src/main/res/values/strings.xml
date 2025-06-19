@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">San Pedrito UNS</string>
+
+    <!-- Strings del formulario -->
+    <string name="titulo_app">San Pedrito UNS 2025</string>
+    <string name="subtitulo_registro">Registro de Participantes</string>
+    <string name="fecha_evento">26 de Junio, 2025</string>
+
+    <!-- Arrays para Spinners -->
+    <string-array name="tipo_participante">
+        <item>Seleccionar tipo...</item>
+        <item>Alumno</item>
+        <item>Docente</item>
+        <item>Administrativo</item>
+    </string-array>
+
+    <string-array name="facultades">
+        <item>Facultad de Ingeniería</item>
+        <item>Facultad de Educación y Humanidades</item>
+        <item>Facultad de Ciencias de la Salud</item>
+        <item>Facultad de Ciencias</item>
+        <item>Facultad de Derecho y Ciencias Políticas</item>
+        <item>Facultad de Economía y Contabilidad</item>
+    </string-array>
+
+    <string-array name="escuelas_sistemas">
+        <item>Ingeniería de Sistemas e Informática</item>
+        <item>Ingeniería Civil</item>
+        <item>Ingeniería Mecánica</item>
+        <item>Ingeniería Agroindustrial</item>
+        <item>Ingeniería en Energía</item>
+    </string-array>
+
+    <string-array name="escuelas_educacion">
+        <item>Educación Inicial</item>
+        <item>Educación Primaria</item>
+        <item>Educación Secundaria</item>
+        <item>Educación Física</item>
+        <item>Comunicación, Lingüística y Literatura</item>
+    </string-array>
+
+    <string-array name="escuelas_medicina">
+        <item>Medicina Humana</item>
+        <item>Enfermería</item>
+        <item>Obstetricia</item>
+        <item>Psicología</item>
+        <item>Nutrición y Dietética</item>
+    </string-array>
+
+    <!-- Mensajes -->
+    <string name="mensaje_registro_exitoso">¡Registro exitoso! Bienvenido al San Pedrito UNS 2025</string>
+    <string name="error_campos_vacios">Por favor complete todos los campos obligatorios</string>
+    <string name="error_email_invalido">Por favor ingrese un email válido</string>
+
+    <!-- Menú -->
+    <string name="menu_lista">Lista de Participantes</string>
+    <string name="menu_estadisticas">Estadísticas</string>
+    <string name="menu_exportar">Exportar Datos</string>
+    <string name="menu_configuracion">Configuración</string>
+    <string name="menu_acerca">Acerca de</string>
+    <string name="menu_info">Información del Evento</string>
+    <string name="menu_compartir">Compartir</string>
+    <string name="menu_contacto">Contacto</string>
+</resources>

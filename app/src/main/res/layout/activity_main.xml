@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/uns_red"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/headerCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvTitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎉 SAN PEDRITO UNS 2025"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/uns_red"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tvEvento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REGISTRO DE PARTICIPANTES"
+                    android:textSize="16sp"
+                    android:textColor="@color/uns_red"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/tvFecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📅 26 de Junio, 2025"
+                    android:textSize="14sp"
+                    android:textColor="@color/uns_red"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Main Form Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <!-- Información Personal -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INFORMACIÓN PERSONAL"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/uns_red"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Tipo de Participante -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo de Participante"
+                    android:textSize="14sp"
+                    android:textColor="@color/uns_red"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginBottom="4dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerTipo"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/spinner_background" />
+
+                <!-- Nombre -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:boxStrokeColor="@color/uns_red"
+                    app:hintTextColor="@color/uns_red"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etNombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nombres"
+                        android:inputType="textPersonName|textCapWords"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/uns_red" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Apellidos -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilApellidos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:boxStrokeColor="@color/uns_red"
+                    app:hintTextColor="@color/uns_red"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etApellidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Apellidos"
+                        android:inputType="textPersonName|textCapWords"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/uns_red" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Código -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilCodigo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:boxStrokeColor="@color/uns_red"
+                    app:hintTextColor="@color/uns_red"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etCodigo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Código Universitario"
+                        android:inputType="textNoSuggestions"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/uns_red" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Email -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:boxStrokeColor="@color/uns_red"
+                    app:hintTextColor="@color/uns_red"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Correo Electrónico"
+                        android:inputType="textEmailAddress"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/uns_red" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Teléfono -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilTelefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    app:boxStrokeColor="@color/uns_red"
+                    app:hintTextColor="@color/uns_red"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etTelefono"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Teléfono / Celular"
+                        android:inputType="phone"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/uns_red" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Información Académica -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INFORMACIÓN ACADÉMICA"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/uns_red"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Facultad -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Facultad"
+                    android:textSize="14sp"
+                    android:textColor="@color/uns_red"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginBottom="4dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerFacultad"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/spinner_background" />
+
+                <!-- Escuela -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Escuela Profesional"
+                    android:textSize="14sp"
+                    android:textColor="@color/uns_red"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginBottom="4dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerEscuela"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/spinner_background" />
+
+                <!-- Información del Evento -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INFORMACIÓN DEL EVENTO"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/uns_red"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Talla -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Talla de Polo"
+                    android:textSize="14sp"
+                    android:textColor="@color/uns_red"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginBottom="8dp" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupTalla"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:singleSelection="true"
+                    app:chipSpacingHorizontal="8dp" />
+
+                <!-- Tipo de Participación -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo de Participación"
+                    android:textSize="14sp"
+                    android:textColor="@color/uns_red"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginBottom="8dp" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupParticipacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    app:singleSelection="true"
+                    app:chipSpacingHorizontal="8dp" />
+
+                <!-- Botones -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnLimpiar"
+                        android:layout_width="0dp"
+                        android:layout_height="56dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:text="LIMPIAR"
+                        android:textColor="@color/uns_red"
+                        android:fontFamily="sans-serif-light"
+                        app:backgroundTint="@android:color/white"
+                        app:strokeColor="@color/uns_red"
+                        app:strokeWidth="2dp"
+                        app:cornerRadius="8dp"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnRegistrar"
+                        android:layout_width="0dp"
+                        android:layout_height="56dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:text="REGISTRAR"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="sans-serif-light"
+                        app:backgroundTint="@color/uns_red"
+                        app:cornerRadius="8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Universidad Nacional del Santa\n¡Vive la tradición universitaria!"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:alpha="0.8" />
+
+    </LinearLayout>
+
+</ScrollView>
